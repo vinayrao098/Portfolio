@@ -56,24 +56,22 @@ export const technicalSkills = [
 export const toolsAndTech = [
   "Spring Boot",
   "Hibernate / JPA",
-  "Apache Kafka",
-  "Redis",
-  "RabbitMQ",
+  "IBM MQ",
+  "IBM DB2",
   "Docker",
   "Kubernetes",
   "AWS",
   "Git / GitHub",
   "Jenkins / CI-CD",
   "PostgreSQL",
-  "MongoDB",
+  "Corticon",
   "LangChain",
   "LangGraph",
   "OpenAI API",
   "Next.js",
   "React",
   "Tailwind CSS",
-  "Elasticsearch",
-  "Grafana",
+  "Elasticsearch"
 ];
 
 // ─── PROJECTS ───────────────────────────────
