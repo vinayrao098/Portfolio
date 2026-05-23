@@ -180,10 +180,10 @@ export default function Hero() {
             <motion.button
               whileHover={{ scale: 1.04, y: -2 }}
               whileTap={{ scale: 0.97 }}
-              onClick={() => scrollToSection("projects")}
+              onClick={() => scrollToSection("experience")}
               className="px-7 py-3.5 rounded-xl bg-gradient-to-r from-[#00f0ff] to-[#7c3aed] text-black font-bold text-sm hover:shadow-[0_0_30px_rgba(0,240,255,0.35)] transition-shadow"
             >
-              View My Work
+              View Experience
             </motion.button>
             <motion.button
               whileHover={{ scale: 1.04, y: -2 }}

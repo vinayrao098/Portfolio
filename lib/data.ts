@@ -81,13 +81,13 @@ export const toolsAndTech = [
 export const projects = [
   {
     id: 1,
-    title: "Agentic Workflow Engine",
+    title: "Connecticut Department of Social Services",
     description:
-      "An intelligent multi-agent orchestration platform built with LangGraph and Java Spring Boot. Features autonomous task planning, tool chaining, and real-time monitoring dashboards.",
-    image: "/projects/agentic-engine.jpg",
-    tags: ["Java", "LangGraph", "Python", "Spring Boot", "React"],
-    liveUrl: "https://demo.example.com/agentic",
-    githubUrl: "https://github.com/vinaykumar/agentic-workflow",
+      "An social services plateform for connecticut state citizens to get various assistance like SNAP, TANF, Husky etc. The plateform is built using Java, Spring REST, JSP, IBM MQ, Corticon, IBM DB2. Using corticon for complex business rule engines.",
+    image: "/projects/conn.jpg",
+    tags: ["Java", "IBM MQ", "Corticon", "Spring REST", "JSP", "IBM DB2"],
+    // liveUrl: "https://demo.example.com/agentic",
+    // githubUrl: "https://github.com/vinaykumar/agentic-workflow",
     featured: true,
   },
   {
