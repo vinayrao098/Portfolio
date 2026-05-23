@@ -15,14 +15,14 @@ const fadeUp = {
 
 // Colour palette for tool tags
 const tagColors = [
-  "bg-red-500/10 text-red-300 border-red-500/20",
-  "bg-blue-500/10 text-blue-300 border-blue-500/20",
-  "bg-green-500/10 text-green-300 border-green-500/20",
-  "bg-yellow-500/10 text-yellow-300 border-yellow-500/20",
-  "bg-purple-500/10 text-purple-300 border-purple-500/20",
-  "bg-pink-500/10 text-pink-300 border-pink-500/20",
-  "bg-cyan-500/10 text-cyan-300 border-cyan-500/20",
-  "bg-orange-500/10 text-orange-300 border-orange-500/20",
+  "bg-red-500/10 text-red-700 dark:text-red-300 border-red-500/20",
+  "bg-blue-500/10 text-blue-700 dark:text-blue-300 border-blue-500/20",
+  "bg-green-500/10 text-green-700 dark:text-green-300 border-green-500/20",
+  "bg-yellow-600/10 text-yellow-800 dark:text-yellow-300 border-yellow-600/20",
+  "bg-purple-500/10 text-purple-700 dark:text-purple-300 border-purple-500/20",
+  "bg-pink-500/10 text-pink-700 dark:text-pink-300 border-pink-500/20",
+  "bg-cyan-500/10 text-cyan-700 dark:text-cyan-300 border-cyan-500/20",
+  "bg-orange-500/10 text-orange-700 dark:text-orange-300 border-orange-500/20",
 ];
 
 export default function Skills() {

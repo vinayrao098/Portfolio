@@ -97,17 +97,17 @@
   }
 
   .glass {
-    background: rgba(255, 255, 255, 0.03);
+    background: rgba(15, 23, 42, 0.03); /* very soft slate blue/black tint */
     backdrop-filter: blur(16px);
     -webkit-backdrop-filter: blur(16px);
-    border: 1px solid rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(15, 23, 42, 0.08);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.03);
   }
 
-  .glass-light {
-    background: rgba(255, 255, 255, 0.8);
-    backdrop-filter: blur(16px);
-    -webkit-backdrop-filter: blur(16px);
-    border: 1px solid rgba(255, 255, 255, 0.6);
+  .dark .glass {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    box-shadow: none;
   }
 
   .glow-accent {
@@ -163,9 +163,13 @@
 .skill-bar {
   position: relative;
   height: 6px;
-  background: rgba(255,255,255,0.08);
+  background: rgba(15, 23, 42, 0.08); /* 8% dark slate in light mode */
   border-radius: 99px;
   overflow: hidden;
+}
+
+.dark .skill-bar {
+  background: rgba(255, 255, 255, 0.08);
 }
 
 .skill-bar-fill {
@@ -217,11 +221,17 @@
 }
 
 /* ─── Proficiency tag colors ────────────────── */
-.tag-java { background: rgba(239, 68, 68, 0.15); color: #fca5a5; border: 1px solid rgba(239, 68, 68, 0.2); }
-.tag-spring { background: rgba(34, 197, 94, 0.15); color: #86efac; border: 1px solid rgba(34, 197, 94, 0.2); }
-.tag-react { background: rgba(56, 189, 248, 0.15); color: #7dd3fc; border: 1px solid rgba(56, 189, 248, 0.2); }
-.tag-python { background: rgba(250, 204, 21, 0.15); color: #fde047; border: 1px solid rgba(250, 204, 21, 0.2); }
-.tag-default { background: rgba(0, 240, 255, 0.1); color: #67e8f9; border: 1px solid rgba(0, 240, 255, 0.2); }
+.tag-java { background: rgba(239, 68, 68, 0.08); color: #b91c1c; border: 1px solid rgba(239, 68, 68, 0.15); }
+.tag-spring { background: rgba(34, 197, 94, 0.08); color: #15803d; border: 1px solid rgba(34, 197, 94, 0.15); }
+.tag-react { background: rgba(56, 189, 248, 0.08); color: #0369a1; border: 1px solid rgba(56, 189, 248, 0.15); }
+.tag-python { background: rgba(250, 204, 21, 0.08); color: #a16207; border: 1px solid rgba(250, 204, 21, 0.15); }
+.tag-default { background: rgba(0, 240, 255, 0.06); color: #0891b2; border: 1px solid rgba(0, 240, 255, 0.12); }
+
+.dark .tag-java { background: rgba(239, 68, 68, 0.15); color: #fca5a5; border: 1px solid rgba(239, 68, 68, 0.2); }
+.dark .tag-spring { background: rgba(34, 197, 94, 0.15); color: #86efac; border: 1px solid rgba(34, 197, 94, 0.2); }
+.dark .tag-react { background: rgba(56, 189, 248, 0.15); color: #7dd3fc; border: 1px solid rgba(56, 189, 248, 0.2); }
+.dark .tag-python { background: rgba(250, 204, 21, 0.15); color: #fde047; border: 1px solid rgba(250, 204, 21, 0.2); }
+.dark .tag-default { background: rgba(0, 240, 255, 0.1); color: #67e8f9; border: 1px solid rgba(0, 240, 255, 0.2); }
 
 /* ─── Contact form focus states ─────────────── */
 .form-input {
