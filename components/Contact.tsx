@@ -74,10 +74,28 @@ export default function Contact() {
     if (!form.name || !form.email || !form.message) return;
     setStatus("loading");
 
-    // Simulate network call – replace with real API / EmailJS / Resend
-    await new Promise((r) => setTimeout(r, 1800));
-    setStatus("success");
-    setForm({ name: "", email: "", message: "" });
+    try {
+      const response = await fetch("/api/send", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(form),
+      });
+
+      const data = await response.json();
+
+      if (response.ok && data.success) {
+        setStatus("success");
+        setForm({ name: "", email: "", message: "" });
+      } else {
+        console.error("Failed to send message:", data.error || "Unknown error");
+        setStatus("error");
+      }
+    } catch (error) {
+      console.error("Network error sending message:", error);
+      setStatus("error");
+    }
 
     // Reset after 4s
     setTimeout(() => setStatus("idle"), 4000);
