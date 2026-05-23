@@ -108,15 +108,7 @@ export default function Hero() {
           }}
         />
 
-        {/* Grid overlay */}
-        <div
-          className="absolute inset-0 opacity-[0.03] dark:opacity-[0.04]"
-          style={{
-            backgroundImage:
-              "linear-gradient(rgba(0,240,255,0.5) 1px, transparent 1px), linear-gradient(90deg, rgba(0,240,255,0.5) 1px, transparent 1px)",
-            backgroundSize: "60px 60px",
-          }}
-        />
+
       </div>
 
       <div className="relative z-10 max-w-6xl mx-auto px-4 md:px-8 py-32 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">

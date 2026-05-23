@@ -23,6 +23,7 @@
     --input: 220 13% 91%;
     --ring: 224 71.4% 4.1%;
     --radius: 0.75rem;
+    --grid-color: rgba(15, 23, 42, 0.045); /* 4.5% slate grid in light mode */
   }
 
   .dark {
@@ -41,6 +42,7 @@
     --border: 215 27.9% 16.9%;
     --input: 215 27.9% 16.9%;
     --ring: 216 12.2% 83.9%;
+    --grid-color: rgba(0, 240, 255, 0.035); /* 3.5% cyan grid in dark mode */
   }
 }
 
@@ -59,6 +61,11 @@
   body {
     @apply bg-background text-foreground font-sans antialiased;
     overflow-x: hidden;
+    background-image: 
+      linear-gradient(var(--grid-color) 1px, transparent 1px),
+      linear-gradient(90deg, var(--grid-color) 1px, transparent 1px);
+    background-size: 60px 60px;
+    background-attachment: fixed;
   }
 
   ::selection {
