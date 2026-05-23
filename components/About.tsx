@@ -85,7 +85,7 @@ export default function About() {
               animate={isInView ? "visible" : "hidden"}
               className="text-base dark:text-slate-400 text-slate-600 leading-relaxed mb-8"
             >
-              Over the past 7+ years, I&apos;ve had the privilege of working across
+              Over the past {personalInfo.yearsOfExperience || "4+"} years, I&apos;ve had the privilege of working across
               diverse domains — from financial services to e-commerce — helping
               teams ship production-grade software that withstands real-world load.
               My sweet spot is where{" "}

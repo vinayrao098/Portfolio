@@ -17,14 +17,16 @@ export const personalInfo = {
     "Seasoned developer specialising in Java ecosystems and agentic AI workflows — turning complex problems into elegant, scalable solutions.",
   currentRole: "Senior Java Developer",
   location: "India 🇮🇳",
-  email: "vinay.kumar@example.com",
+  email: "vinayrao098@gmail.com",
   resumeUrl: "/resume.pdf",
-  avatar: null, // set to your image path e.g. "/avatar.jpg"
+  avatar: "/avatar.jpeg", // set to your image path e.g. "/avatar.jpg"
+  yearsOfExperience: "4+",
+  projectsDelivered: "3+",
   socials: {
-    github: "https://github.com/vinaykumar",
-    linkedin: "https://linkedin.com/in/vinaykumar",
+    github: "https://github.com/vinayrao098",
+    linkedin: "www.linkedin.com/in/vinay-raoo",
     twitter: "https://twitter.com/vinaykumar",
-    email: "mailto:vinay.kumar@example.com",
+    email: "mailto:vinayrao098@gmail.com",
   },
 };
 
@@ -151,10 +153,10 @@ export const experiences = [
   {
     id: 1,
     type: "work",
-    role: "Senior Java Developer",
-    company: "TechCorp Solutions",
-    period: "Jan 2022 – Present",
-    location: "Bangalore, India",
+    role: "Technology Analyst",
+    company: "Infosys Limited",
+    period: "Sep 2021 – Present",
+    location: "Gurugram, India",
     description: [
       "Architected and led development of a high-traffic microservices platform handling 10M+ daily transactions.",
       "Built real-time data pipelines using Apache Kafka reducing processing latency by 65%.",
@@ -164,42 +166,14 @@ export const experiences = [
   },
   {
     id: 2,
-    type: "work",
-    role: "Full Stack Java Developer",
-    company: "InnovateTech",
-    period: "Jul 2019 – Dec 2021",
-    location: "Hyderabad, India",
-    description: [
-      "Developed RESTful microservices using Spring Boot, serving 500K+ active users.",
-      "Built responsive React frontends integrating with Java backends via OpenAPI specs.",
-      "Optimised critical database queries achieving 40% performance improvement.",
-      "Contributed to migration from monolith to microservices architecture.",
-    ],
-  },
-  {
-    id: 3,
-    type: "work",
-    role: "Junior Java Developer",
-    company: "StartupNest",
-    period: "Jun 2018 – Jun 2019",
-    location: "Pune, India",
-    description: [
-      "Developed core features of a SaaS CRM platform using Spring MVC and Hibernate.",
-      "Integrated third-party payment gateways (Razorpay, PayPal) into the platform.",
-      "Wrote comprehensive unit and integration tests achieving 80% code coverage.",
-    ],
-  },
-  {
-    id: 4,
     type: "education",
-    role: "B.E. in Computer Science",
-    company: "JNTU Hyderabad",
-    period: "2014 – 2018",
-    location: "Hyderabad, India",
+    role: "B.Tech in Computer Science",
+    company: "GJU Hisar",
+    period: "2017 – 2021",
+    location: "Hisar, India",
     description: [
-      "Graduated with First Class Honours (CGPA: 8.4/10).",
-      "Led the college coding club and won 3 inter-college hackathons.",
-      "Final year project: Distributed File Storage System using Java and P2P network protocols.",
+      "Graduated with First Class Honours (CGPA: 6.3/10).",
+      "Final year project: AI based Image cartoonization using GAN's and OpenCV.",
     ],
   },
 ];

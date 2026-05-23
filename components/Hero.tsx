@@ -244,17 +244,25 @@ export default function Hero() {
 
             {/* Avatar container */}
             <div className="relative w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-transparent m-2">
-              {/* Gradient placeholder avatar */}
-              <div className="w-full h-full bg-gradient-to-br from-[#00f0ff]/20 via-[#7c3aed]/20 to-[#0a0a0a] flex items-center justify-center">
-                <div className="text-center">
-                  <div className="text-7xl md:text-8xl font-black text-gradient select-none">
-                    VK
-                  </div>
-                  <div className="text-xs dark:text-slate-500 text-slate-400 mt-2 font-medium">
-                    Add your photo
+              {personalInfo.avatar ? (
+                <img
+                  src={personalInfo.avatar}
+                  alt={personalInfo.name}
+                  className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
+                />
+              ) : (
+                /* Gradient placeholder avatar */
+                <div className="w-full h-full bg-gradient-to-br from-[#00f0ff]/20 via-[#7c3aed]/20 to-[#0a0a0a] flex items-center justify-center">
+                  <div className="text-center">
+                    <div className="text-7xl md:text-8xl font-black text-gradient select-none">
+                      VK
+                    </div>
+                    <div className="text-xs dark:text-slate-500 text-slate-400 mt-2 font-medium">
+                      Add your photo
+                    </div>
                   </div>
                 </div>
-              </div>
+              )}
             </div>
 
             {/* Floating badges */}
@@ -263,7 +271,7 @@ export default function Hero() {
               transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
               className="absolute -bottom-4 -left-4 glass border border-[#00f0ff]/20 rounded-2xl px-3 py-2 text-xs font-semibold"
             >
-              <div className="text-[#00f0ff]">7+ Years</div>
+              <div className="text-[#00f0ff]">{personalInfo.yearsOfExperience || "4+"} Years</div>
               <div className="dark:text-slate-400 text-slate-600">Experience</div>
             </motion.div>
 
@@ -277,7 +285,7 @@ export default function Hero() {
               }}
               className="absolute -top-2 -right-4 glass border border-[#7c3aed]/20 rounded-2xl px-3 py-2 text-xs font-semibold"
             >
-              <div className="text-[#a78bfa]">20+ Projects</div>
+              <div className="text-[#a78bfa]">{personalInfo.projectsDelivered || "15+"} Projects</div>
               <div className="dark:text-slate-400 text-slate-600">Delivered</div>
             </motion.div>
           </motion.div>
