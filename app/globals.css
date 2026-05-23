@@ -260,3 +260,62 @@
 .light .form-input::placeholder {
   color: rgba(0, 0, 0, 0.3);
 }
+
+/* ─── Light theme overrides for hardcoded neon styling ─── */
+.text-\[\#00f0ff\] {
+  color: #0891b2; /* Professional high-contrast teal in light mode */
+}
+.dark .text-\[\#00f0ff\] {
+  color: #00f0ff; /* Glowing cyan in dark mode */
+}
+
+.text-\[\#a78bfa\] {
+  color: #6d28d9; /* Deep violet in light mode */
+}
+.dark .text-\[\#a78bfa\] {
+  color: #a78bfa; /* Glowing light purple in dark mode */
+}
+
+.typed-cursor {
+  color: #0891b2;
+}
+.dark .typed-cursor {
+  color: #00f0ff;
+}
+
+/* Background & border opacity contrast corrections */
+.bg-\[\#00f0ff\]\/10 {
+  background-color: rgba(8, 145, 178, 0.08);
+}
+.dark .bg-\[\#00f0ff\]\/10 {
+  background-color: rgba(0, 240, 255, 0.10);
+}
+
+.border-\[\#00f0ff\]\/20 {
+  border-color: rgba(8, 145, 178, 0.18);
+}
+.dark .border-\[\#00f0ff\]\/20 {
+  border-color: rgba(0, 240, 255, 0.20);
+}
+
+.border-\[\#00f0ff\]\/30 {
+  border-color: rgba(8, 145, 178, 0.28);
+}
+.dark .border-\[\#00f0ff\]\/30 {
+  border-color: rgba(0, 240, 255, 0.30);
+}
+
+.border-\[\#7c3aed\]\/20 {
+  border-color: rgba(124, 58, 237, 0.28);
+}
+.dark .border-\[\#7c3aed\]\/20 {
+  border-color: rgba(124, 58, 237, 0.20);
+}
+
+.bg-\[\#7c3aed\]\/10 {
+  background-color: rgba(124, 58, 237, 0.08);
+}
+.dark .bg-\[\#7c3aed\]\/10 {
+  background-color: rgba(124, 58, 237, 0.10);
+}
+
