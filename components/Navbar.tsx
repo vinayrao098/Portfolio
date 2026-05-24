@@ -5,6 +5,7 @@ import { useTheme } from "next-themes";
 import { motion, AnimatePresence } from "framer-motion";
 import { Sun, Moon, Download, Menu, X } from "lucide-react";
 import { personalInfo } from "@/lib/data";
+import { toast } from "sonner";
 
 const navLinks = [
   { href: "#home", label: "Home" },
@@ -21,6 +22,40 @@ export default function Navbar() {
   const [activeSection, setActiveSection] = useState("home");
   const { theme, setTheme } = useTheme();
   const [mounted, setMounted] = useState(false);
+
+  const handleDownload = async (e: React.MouseEvent<HTMLAnchorElement>) => {
+    e.preventDefault();
+    const url = personalInfo.resumeUrl;
+
+    if (!url) {
+      toast.error("CV download path is not configured!");
+      return;
+    }
+
+    const toastId = toast.loading("Verifying CV file...");
+
+    try {
+      const res = await fetch(url, { method: "HEAD" });
+
+      if (res.ok) {
+        toast.dismiss(toastId);
+        toast.success("CV download started successfully!");
+        const link = document.createElement("a");
+        link.href = url;
+        link.download = url.split("/").pop() || "resume";
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+      } else {
+        toast.dismiss(toastId);
+        toast.error(`Resume file not found at ${url}! Please place it in your 'public' folder.`);
+      }
+    } catch (err) {
+      console.error("Error downloading CV:", err);
+      toast.dismiss(toastId);
+      toast.error("Failed to verify CV. Check if the file exists in your public folder.");
+    }
+  };
 
   useEffect(() => {
     setMounted(true);
@@ -141,6 +176,7 @@ export default function Navbar() {
               {/* Download CV */}
               <motion.a
                 href={personalInfo.resumeUrl}
+                onClick={handleDownload}
                 download
                 whileHover={{ scale: 1.04 }}
                 whileTap={{ scale: 0.96 }}
@@ -217,6 +253,7 @@ export default function Navbar() {
             <div className="mt-6">
               <a
                 href={personalInfo.resumeUrl}
+                onClick={handleDownload}
                 download
                 className="flex items-center justify-center gap-2 w-full py-3 rounded-xl bg-gradient-to-r from-[#00f0ff] to-[#7c3aed] text-black font-semibold text-sm"
               >
