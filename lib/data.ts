@@ -18,7 +18,7 @@ export const personalInfo = {
   currentRole: "Senior Java Developer",
   location: "India 🇮🇳",
   email: "vinayrao098@gmail.com",
-  resumeUrl: "/resume.pdf",
+  resumeUrl: "/resume.docx",
   avatar: "/avatar.jpeg", // set to your image path e.g. "/avatar.jpg"
   yearsOfExperience: "4+",
   projectsDelivered: "3+",
