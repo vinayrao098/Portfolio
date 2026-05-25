@@ -24,8 +24,8 @@ export const personalInfo = {
   projectsDelivered: "3+",
   socials: {
     github: "https://github.com/vinayrao098",
-    linkedin: "www.linkedin.com/in/vinay-raoo",
-    twitter: "https://twitter.com/vinaykumar",
+    linkedin: "https://www.linkedin.com/in/vinay-raoo",
+    twitter: "https://x.com/VinayKumar61332",
     email: "mailto:vinayrao098@gmail.com",
   },
 };
