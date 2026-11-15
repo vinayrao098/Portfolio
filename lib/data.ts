@@ -20,7 +20,7 @@ export const personalInfo = {
   email: "vinayrao098@gmail.com",
   resumeUrl: "/resume.docx",
   avatar: "/avatar.jpeg", // set to your image path e.g. "/avatar.jpg"
-  yearsOfExperience: "4+",
+  yearsOfExperience: "5+",
   projectsDelivered: "3+",
   socials: {
     github: "https://github.com/vinayrao098",
@@ -31,7 +31,7 @@ export const personalInfo = {
 };
 
 export const aboutPunchline =
-  "From Enterprise Java to Agentic Workflows: A Full Stack Vibe Coder.";
+  "From Enterprise Java to Agentic Workflows: A Full Stack Developer.";
 
 export const funFacts = [
   { emoji: "☕", label: "Coffee-driven developer" },
@@ -43,14 +43,14 @@ export const funFacts = [
 // ─── SKILLS ─────────────────────────────────
 
 export const technicalSkills = [
-  { name: "Java / Spring Boot", level: 95 },
+  { name: "Java", level: 95 },
+  { name: "Spring Boot", level: 95 },
   { name: "Microservices & REST APIs", level: 92 },
   { name: "TypeScript / JavaScript", level: 85 },
-  { name: "React / Next.js", level: 80 },
+  { name: "Angular", level: 80 },
   { name: "Python", level: 75 },
   { name: "SQL / PostgreSQL", level: 88 },
   { name: "Docker / Kubernetes", level: 78 },
-  { name: "LangChain / LangGraph", level: 72 },
 ];
 
 export const toolsAndTech = [
@@ -62,16 +62,16 @@ export const toolsAndTech = [
   "Kubernetes",
   "AWS",
   "Git / GitHub",
+  "SVN",
   "Jenkins / CI-CD",
   "PostgreSQL",
   "Corticon",
   "LangChain",
   "LangGraph",
   "OpenAI API",
-  "Next.js",
-  "React",
-  "Tailwind CSS",
-  "Elasticsearch"
+  "Angular",
+  "Typescript",
+  "Tailwind CSS"
 ];
 
 // ─── PROJECTS ───────────────────────────────
