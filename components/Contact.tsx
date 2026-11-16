@@ -225,7 +225,7 @@ export default function Contact() {
                   type="text"
                   value={form.name}
                   onChange={handleChange}
-                  placeholder="John Doe"
+                  placeholder="Vinay Kumar"
                   required
                   className="form-input"
                   disabled={status === "loading" || status === "success"}
@@ -245,7 +245,7 @@ export default function Contact() {
                   type="email"
                   value={form.email}
                   onChange={handleChange}
-                  placeholder="john@example.com"
+                  placeholder="vinay@example.com"
                   required
                   className="form-input"
                   disabled={status === "loading" || status === "success"}
@@ -279,13 +279,12 @@ export default function Contact() {
                   status === "idle" ? { scale: 1.02, y: -1 } : undefined
                 }
                 whileTap={status === "idle" ? { scale: 0.98 } : undefined}
-                className={`w-full flex items-center justify-center gap-2 py-3.5 rounded-xl font-bold text-sm transition-all ${
-                  status === "success"
+                className={`w-full flex items-center justify-center gap-2 py-3.5 rounded-xl font-bold text-sm transition-all ${status === "success"
                     ? "bg-green-500/20 border border-green-500/30 text-green-400"
                     : status === "error"
-                    ? "bg-red-500/20 border border-red-500/30 text-red-400"
-                    : "bg-gradient-to-r from-[#00f0ff] to-[#7c3aed] text-black hover:shadow-[0_0_20px_rgba(0,240,255,0.3)]"
-                }`}
+                      ? "bg-red-500/20 border border-red-500/30 text-red-400"
+                      : "bg-gradient-to-r from-[#00f0ff] to-[#7c3aed] text-black hover:shadow-[0_0_20px_rgba(0,240,255,0.3)]"
+                  }`}
               >
                 {status === "idle" && (
                   <>

@@ -37,7 +37,7 @@ export const funFacts = [
   { emoji: "☕", label: "Coffee-driven developer" },
   { emoji: "🤖", label: "AI & automation enthusiast" },
   { emoji: "🏗️", label: "Clean architecture advocate" },
-  { emoji: "🌐", label: "Open-source contributor" },
+  //{ emoji: "🌐", label: "Open-source contributor" },
 ];
 
 // ─── SKILLS ─────────────────────────────────
