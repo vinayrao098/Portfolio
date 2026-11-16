@@ -46,6 +46,7 @@ export const technicalSkills = [
   { name: "Java", level: 95 },
   { name: "Spring Boot", level: 95 },
   { name: "Microservices & REST APIs", level: 92 },
+  { name: "AWS", level: 85 },
   { name: "TypeScript / JavaScript", level: 85 },
   { name: "Angular", level: 80 },
   { name: "Python", level: 75 },
